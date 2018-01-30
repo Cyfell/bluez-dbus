@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-W -Wall -ansi -pedantic -I/usr/include/glib-2.0/ -I/usr/lib64/glib-2.0/include/ -std=c11 -rdynamic
-LDFLAGS= -ldbus-1
+LDFLAGS= -lglib-2.0 -lgio-2.0
 EXEC=bluez-dbus
 SRC= $(wildcard *.c)
 OBJ= $(SRC:.c=.o)
